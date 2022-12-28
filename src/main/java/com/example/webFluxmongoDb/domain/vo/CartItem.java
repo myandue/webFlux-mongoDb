@@ -13,6 +13,12 @@ public class CartItem {
     private Item item;
     private int quantity;
 
+    //처음 생성될 때 수량 1
+    public CartItem(Item item){
+        this.item=item;
+        this.quantity=1;
+    }
+
     public void increment(){
         this.quantity+=1;
     }
